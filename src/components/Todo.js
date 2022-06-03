@@ -1,5 +1,5 @@
 import React,{useReducer,useEffect, useRef} from 'react'
-
+import "./Todo.css"
 const initialState=[]
 const reducer=(state,action)=>{
     switch(action.type){
@@ -33,14 +33,19 @@ export const Todo = () => {
     }
   return (
     <>
+    <div className='Todo'>
+        <h1>Todo App By Using UseReducer</h1>
     <form action="" onSubmit={handlesubmit}>
         <input type="text" placeholder='add task.....' ref={inputREf} />
 
     </form>
-    <ul>
-        {state.map((e,i)=>(<li key={i}>{e.name} <button onClick={()=>{dispatch({type:"remove",i})}}>Del</button>
-        <button onClick={()=>{dispatch({type:"toggle",i})}}>{e.Done?"Done":"NotDone"}</button></li>))}
+    <ul className='UL'>
+      
+        {state.map((e,i)=>(<li key={i}>{e.name}<div><button onClick={()=>{dispatch({type:"remove",i})}}>Del</button>
+        <button onClick={()=>{dispatch({type:"toggle",i})}}>{e.Done?"Done":"NotDone"}</button></div></li>))}
+ 
     </ul>
+    </div>
     </>
   )
 }

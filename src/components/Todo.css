@@ -1,0 +1,69 @@
+
+
+.Todo input{
+    width: 500px;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-size: 24px;
+    border: none;
+    background: #fff;
+    color: orange;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Todo input::placeholder{
+    color: orange;
+
+}
+.Todo input:focus{
+    outline: 4px dotted rgb(255, 72, 0);
+
+}
+.UL{
+    width: 500px;
+    display: flex;
+
+    flex-direction: column;
+    gap: 30px;
+    
+    list-style: none;
+    
+}
+.UL li{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+    letter-spacing: 1.2px;
+    
+}
+.UL div{
+    display: flex;
+ 
+    justify-content: space-around;
+    width: 250px;
+    
+}
+.UL div button:nth-child(1){
+    background: linear-gradient(to right,rgba(241, 8, 167, 0.994),rgb(244, 10, 49),rgb(241, 245, 8));
+    color: yellow;
+}
+.UL div button{
+    width: 100px;
+    border: none;
+    font-size: 20px;
+    background: linear-gradient(to right,rgba(241, 237, 8, 0.994),pink,rgb(225, 101, 101));
+    color: rgb(8, 37, 255);
+    letter-spacing: 1.5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
